@@ -56,7 +56,7 @@ const weather = async function (urlApi, nameCity="bogota"){
                 </div>
             `
         }).join("");
-        city.innerHTML = cities.city.name;
+        city.innerHTML = cities.city.name + " (" + cities.city.country + ")";
         content.innerHTML = pronostic;
     }catch(e){
         weather(API)

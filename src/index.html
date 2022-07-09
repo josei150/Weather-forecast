@@ -21,16 +21,15 @@
             <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
               <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                 <div class="flex items-center justify-between w-full md:w-auto">
-                  <a href="#">
+                  
                     <!-- <span class="sr-only text-white">Title</span> -->
                     <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg">
                   </a>
                 </div>
               </div>
               <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                <a href="#" class="font-medium text-indigo-500 hover:text-indigo-700">About</a>
-                <a href="#" class="font-medium text-indigo-500 hover:text-indigo-700">Projects</a>
-                <a href="#" class="font-medium text-indigo-500 hover:text-indigo-700">Contact</a>
+                <a href="#find-city-label" class="font-medium text-indigo-500 hover:text-indigo-700">Pronostic</a>
+                <a href="#contact" class="font-medium text-indigo-500 hover:text-indigo-700">Contact</a>
               </div>
             </nav>
           </div>
@@ -44,7 +43,11 @@
             </h1>
             <p
               class="mt-3 text-base text-gray-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Description</p>
+              I am a systems engineer, enthusiastic about developing web applications. 👨‍💻 I'm currently learning JavaScript concepts that allow me to make it my main development language (the one I'm most successful at right now is Python). 🐍
+              <br><br>
+              I present a landing page where I use a weather API, you can check the forecast of many cities, try yours. 👀
+              <br><br>
+              If the city does not exist or is not available 🙅🏻‍♂️ it will show you by default the forecast of the city of Bogotá (because I live there). 😅</p>
           </div>
         </main>
       </div>
@@ -57,11 +60,11 @@
 
   <main class="bg-slate-600">
     <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-      <h4 class="text-2xl font-extrabold tracking-tight text-white">Do you want to change city?</h4>
+      <h4 class="text-2xl font-extrabold tracking-tight text-white" id="find-city-label">Do you want to change city?</h4>
       <input type="text" id="text-city" class="shadow appearance-none border rounded w-small py-2 px-3 ml-2 mt-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
       <button id="find-city" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-1 px-1 ml-2 mt-4 rounded">Cambiar</button>
       <br><br>
-      <h2 class="text-2xl font-extrabold tracking-tight text-white">Weather in <span id="city"></span></h2>
+      <h2 class="text-2xl font-extrabold tracking-tight text-white">Weather forecast in <span id="city"></span> for the next 5 days</h2>
       <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8" id="content">
         
         <!-- content -->
@@ -73,9 +76,9 @@
   </main>
   <footer class="bg-slate-700">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+      <h2 id="contact" class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
         <span class="block text-white">Contact</span>
-        <span class="block text-indigo-600">keep in touch.</span>
+        <span class="block text-indigo-600">You can find me on Twitter</span>
       </h2>
       <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
         <a target="_blank" href="https://twitter.com/IsidroCaldea">
